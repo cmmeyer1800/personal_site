@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <div class="columns">
+    <div class="columns box">
         <div class="column has-text-centered">
             <a class="is-size-3" href="{{ url_for('main_bp.index') }}">
                 Collin Meyer
             </a>
+        </div>
+    </div>
+    <div class="columns box">
+        <div class="column has-text-centered">
+            <div class="is-size-5">
+                Who Am I?
+            </div>
+            <hr>
+            <figure class="image is-1x1">
+                <img src="/assets/headshot.jpg">
+            </figure>
+        </div>
+        <div class="column has-text-centered">
+            <div class="is-size-5">
+                Test
+            </div>
+            <hr>
         </div>
     </div>
 {% endblock %}
