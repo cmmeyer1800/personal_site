@@ -1,16 +1,27 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <div class="columns box">
-        <div class="column has-text-centered">
-            <a class="is-size-3" href="{{ url_for('main_bp.index') }}">
-                Collin Meyer
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="level box">
+        <div class="level-item has-text-centered">
+            <a href="https://www.linkedin.com/in/collin-meyer-88593a206" class="subtitle">
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
             </a>
         </div>
-    </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <a href="{{ url_for('main_bp.index') }}" class="title">Collin Meyer</a>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <a href="https://github.com/cmmeyer1800" class="subtitle">
+                <i class="fa fa-github" style="font-size:36px"></i>
+            </a>
+        </div>
+    </nav>
     <div class="columns box">
         <div class="column has-text-centered">
-            <div class="is-size-5">
+            <div class="subtitle is-size-5">
                 Who Am I?
             </div>
             <hr>
@@ -19,7 +30,7 @@
             </figure>
         </div>
         <div class="column has-text-centered">
-            <div class="is-size-5">
+            <div class="subtitle is-size-5">
                 Test
             </div>
             <hr>
