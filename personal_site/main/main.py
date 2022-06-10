@@ -6,4 +6,4 @@ main_bp = Blueprint('main_bp', __name__,
 
 @main_bp.route("/")
 def index():
-    return {"Author":"Collin"}
+    return render_template("index.html")
