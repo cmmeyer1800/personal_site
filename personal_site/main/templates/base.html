@@ -7,11 +7,38 @@
         <title>Collin Meyer</title>
         <link rel="stylesheet" href="/assets/style.css">
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% block head %}
         {% endblock %}
     </head>
     <body>
+        <nav class="level box">
+            <div class="level-item has-text-centered">
+                <a href="https://www.linkedin.com/in/collin-meyer-88593a206" class="subtitle">
+                    <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                </a>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <a href="{{ url_for('main_bp.index') }}" class="title">Collin Meyer</a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <a href="https://github.com/cmmeyer1800" class="subtitle">
+                    <i class="fa fa-github" style="font-size:36px"></i>
+                </a>
+            </div>
+        </nav>
         {% block body %}
         {% endblock %}
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <small class="subtitle is-size-6">
+                        Copyright © 2022 <a class="subtitle is-size-6" href="mailto:collinmmeyer@gmail.com">Collin Meyer</a>. All Rights Reserved
+                    </small>
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
